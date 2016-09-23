@@ -7,3 +7,4 @@
 /nbproject/private/
 /nbproject/
 .DS_Store
+application/config/database.php
