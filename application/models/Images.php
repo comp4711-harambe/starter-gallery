@@ -1,13 +1,13 @@
 <?php
 
 class Images extends CI_Model {
-	
+
 	// constructor (a good practice)
-	function _construct()
+	function __construct()
 	{
-		parent::_construct();
+		parent::__construct();
 	}
-	
+
 	// return all images by desc post date order
 	function all()
 	{
@@ -15,7 +15,7 @@ class Images extends CI_Model {
 		$query = $this->db->get('images');
 		return $query->result_array();
 	}
-	
+
 	// return just the 3 newest images.
 	function newest()
 	{
